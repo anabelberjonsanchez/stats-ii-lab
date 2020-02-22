@@ -31,7 +31,7 @@ dat <- data.frame(exp, educ, salary)
 
 If we plot these variables, we can see that there's no relationship:
 ```{r }
-salaryPlot <- ggplot(dat, aes(x = exp, y = educ)) +
+salaryPlot <- ggplot(dat, aes(x = exp, y = educ, color=aanimal)) +
   geom_point() + 
   xlab("Experience") + 
   ylab("Education") +
